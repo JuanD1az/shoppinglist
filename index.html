@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="To Do List, Shopping List, Lista de compras">
+        <meta name="description" content="Crea tu lista de compra GRATIS.">
+
+        <meta property="og:title" content="Shopping List">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="img/image_web.webp">
+        <meta property="og:url" content="https://tulocal.shop/">
+        <meta property="og:description" content="Crea tu lista de compra GRATIS.">
+        <meta property="og:site_name" content="Shopping List">
+
+        <title>Shopping List</title>
+        <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+      <main>
+        <div class="paper"></div>
+        <h1>Shopping List</h1>
+        <section id="task-header">
+          <input type="text" placeholder="Ingresar producto...">
+          <button type="button" id="btnAdd" onclick="addTask()">Agregar</button>
+        </section>
+        <section id="task-body">
+          <ul>
+          </ul>
+        </section>
+      </main>
+
+      <script src="task.js"></script>
+    </body>
+</html>

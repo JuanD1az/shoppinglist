@@ -13,20 +13,20 @@
 }
 
 body {
-    height: 100vh;
-    background-color: whitesmoke;
     display: grid;
     place-items: center;
+    height: 100vh;
     font-size: 20px;
+    background-color: whitesmoke;
 }
 
 main {
-    background-color: white;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     max-width: 550px;
     height: 700px;
-    display: flex;
-    flex-direction: column;
+    background-color: white;
     box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.15);
 }
 
@@ -39,19 +39,19 @@ main h1{
 }
 
 #task-header {
-    height: 80px;
-    border-bottom: 1px solid lightblue;
-    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 80px;
+    background-color: white;
+    border-bottom: 1px solid lightblue;
 }
 
 #task-header input {
-    border: none;
     width: 100%;
-    font-size: 1.2rem;
     padding: 20px;
+    font-size: 1.2rem;
+    border: none;
 }
 
 #task-header input:focus {
@@ -59,11 +59,11 @@ main h1{
 }
 
 #task-header button {
-    background: transparent;
-    border: none;
+    padding: 20px;
     font-size: 1.2rem;
     cursor: pointer;
-    padding: 20px;
+    border: none;
+    background: transparent;
 }
 
 #task-body{
@@ -72,16 +72,15 @@ main h1{
 
 /* Contenedor */
 #task-body ul {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    background-color: white;
     padding: 0;
     margin: 0;
     margin-bottom: 8px;
     border-radius: 0.1rem;
+    background-color: white;
     list-style-type: none;
-
-    display: flex;
-    flex-direction: column;
 }
 
 /* Contenedor tarea */
@@ -109,20 +108,20 @@ main h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: transparent;
-    border: none;
-    font-size: 1.5rem;
     height: 40px;
     padding: 0px 20px 0px 20px;
+    font-size: 1.5rem;
     cursor: pointer;
+    border: none;
+    background-color: transparent;
 }
 
 /* Parrafo */
 #task-body .task-container p {
-    padding-top: 15px;
-    padding-bottom: 15px;
     width: 100%;
     max-width: 420px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     line-height: 24px;
     overflow-wrap: break-word;
 }

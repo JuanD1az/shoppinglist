@@ -139,9 +139,7 @@ function loadList(array) {
 //Elimina fills
 function fillRemove(){
     let fillList = document.querySelectorAll(".fill");
-
-    fill--;
-    fillList[fill].remove();
+    fillList[--fill].remove();
 }
 
 //Agrega fills

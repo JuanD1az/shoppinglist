@@ -178,10 +178,10 @@ const data = localStorage.getItem('ShoppingList');
 if(data){
     lista = JSON.parse(data);
     loadList(lista);
-    fillCalculate();
 }else{
     lista = [];
 }
+fillCalculate();
 
 //Detecta el cambio de tamaño de pantalla
 window.addEventListener('resize', fillCalculate);
